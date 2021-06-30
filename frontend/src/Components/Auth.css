@@ -1,0 +1,65 @@
+.inner-container{
+    background: white;
+    width: 60%;
+    margin-top: 40px;
+    
+    border-radius: 10px;
+
+}
+
+.inner-container form {
+    width: 100%;
+    padding: 5px;
+}
+.form-control{
+    padding: 20px 20px;
+}
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+
+}
+.btn{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #0072B5;
+    border:none;
+    font-weight: bold;
+    color: white;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+.auth-bottom{
+    padding:  10px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+@media only screen and (min-width: 720px) {
+
+    .inner-container{
+        width: 40%;
+    }
+    
+    }
+
+@media only screen and (min-width: 1000px) {
+
+.inner-container{
+    width: 30%;
+}
+
+}
+@media only screen and (max-width: 500px) {
+
+    .inner-container{
+        width: 90%;
+    }
+    
+    }
