@@ -21,7 +21,7 @@ export const register = (name, email, password) => async (dispatch) => {
     }
     console.log(name, email, password)
     const { data } = await axios.post(
-      'http://127.0.0.1:5000/api/users/register',
+      '/api/users/register',
       { name, email, password },
       config
     )
@@ -61,7 +61,7 @@ export const login = (email, password) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'http://127.0.0.1:5000/api/users/login',
+      '/api/users/login',
       { email, password },
       config
     )
@@ -82,8 +82,6 @@ export const login = (email, password) => async (dispatch) => {
     })
   }
 }
-
-
 
 export const logout = () => (dispatch) => {
   dispatch({ type: USER_LOGOUT })
