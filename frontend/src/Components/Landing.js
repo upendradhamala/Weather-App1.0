@@ -54,6 +54,7 @@ const Landing = ({ history }) => {
               type='text'
               value={city}
               onChange={(e) => setCity(e.target.value)}
+              required
             />
             <button className='landing-btn' type='submit'>
               <SearchIcon style={{ cursor: 'pointer' }} />
