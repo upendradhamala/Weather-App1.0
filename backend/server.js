@@ -15,9 +15,6 @@ const __dirname = path.resolve()
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
-  res.send('Backend is working perfectly')
-})
 app.use('/api/users', userRoutes)
 app.use('/api/weather', weatherRoutes)
 
