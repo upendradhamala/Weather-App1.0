@@ -4,11 +4,14 @@ import connectDB from './config/db.js'
 import cors from 'cors'
 import userRoutes from './routes/UserRoutes.js'
 import weatherRoutes from './routes/WeatherRoutes.js'
+import path from 'path'
 
 const app = express()
 dotenv.config()
 connectDB()
 const PORT = 5000 || process.env.PORT
+const __dirname = path.resolve()
+
 app.use(express.json())
 app.use(cors())
 
