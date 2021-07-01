@@ -34,9 +34,10 @@ router.get(
 
         res.status(201).json(data)
       } else {
-        const { data } = await Weather.findOne({ city: capitalize(city) })
-        if (data) {
-          res.status(201).json(data)
+        const dataOld = await Weather.findOne({ city: capitalize(city) })
+
+        if (dataOld) {
+          res.status(201).json(dataOld)
         }
       }
     } catch (error) {

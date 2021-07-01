@@ -8,9 +8,9 @@ const router = express.Router()
 router.post(
   '/register',
   asyncHandler(async (req, res) => {
-    console.log("Sdfsdf")
+    console.log('Sdfsdf')
     const { name, email, password } = req.body
-console.log(req.body)
+    console.log(req.body)
     const userExists = await User.findOne({ email })
 
     if (userExists) {
@@ -50,7 +50,7 @@ router.post(
         _id: user._id,
         name: user.name,
         email: user.email,
-       
+
         token: generateToken(user._id),
       })
     } else {
