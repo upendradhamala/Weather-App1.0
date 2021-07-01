@@ -14,4 +14,4 @@ Move to root folder and run `npm run dev` command to run both backend and fronte
 
 ### See Live
 
-The deployed link is (https://glacial-castle-35211.herokuapp.com/) (https://glacial-castle-35211.herokuapp.com/)
+The deployed link is [Click Here] (https://glacial-castle-35211.herokuapp.com/)
