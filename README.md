@@ -11,3 +11,7 @@ Then move to frontend folder and run `npm install`.
 ### Final Step
 
 Move to root folder and run `npm run dev` command to run both backend and frontend concurrently.
+
+### See Live
+
+The deployed link is (https://glacial-castle-35211.herokuapp.com/) (https://glacial-castle-35211.herokuapp.com/)
